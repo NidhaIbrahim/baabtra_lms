@@ -1,0 +1,45 @@
+#para1{
+    font-size: 32px;
+    color: cornflowerblue;
+}
+
+.demo_class{
+    color: darkgoldenrod;
+    font-size: 30px;
+    font-variant: small-caps;
+}
+
+/* contextual selector */
+/* #para3 span{
+    color: rgb(0, 119, 224);
+    font-size: 24px;
+} */
+
+/* attribute selector */
+input[type="text"]{
+    color: green;
+    font-size: 40px;
+}
+
+/* grouping selector */
+h1,h4,#para3{
+    font-style: italic;
+}
+
+span{
+    color: rgb(3, 250, 250);
+    font-size: 29px;
+    font-style: italic;
+}
+
+/* Inheritence selector */
+#div1{
+    color: rgb(146, 171, 121);
+    font-size: 35px;
+    font-variant: small-caps;
+}
+
+#div1 span{
+    color: inherit;
+    font-size: inherit;
+}
