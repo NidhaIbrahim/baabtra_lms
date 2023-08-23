@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+    <!-- downloaded version -->
+    <!-- <script src="/jquery-3.7.0.min.js"></script> -->
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            margin: 20px;
+        }
+
+        #div1 {
+            background-color: rgb(184, 108, 128);
+            border: 2px solid rgb(179, 33, 91);
+            display: none;
+        }
+
+        #div2 {
+            background-color: rgb(170, 106, 231);
+            border: 2px solid rgb(82, 26, 135);
+        }
+
+        #div3 {
+            background-color: rgb(116, 214, 155);
+            border: 2px solid rgb(24, 128, 66);
+        }
+
+        #div4 {
+            background-color: rgb(217, 228, 111);
+            border: 2px solid rgb(166, 155, 31);
+        }
+
+        #div5 {
+            background-color: rgb(111, 228, 154);
+            border: 2px solid rgb(31, 166, 114);
+            display: none;
+        }
+
+        #div6 {
+            background-color: rgb(228, 187, 111);
+            border: 2px solid rgb(166, 99, 31);
+        }
+
+        #div7 {
+            background-color: rgb(228, 111, 111);
+            border: 2px solid rgb(166, 31, 31);
+        }
+
+        #div8{
+            background-color: rgb(94, 164, 202);
+            border: 2px solid rgb(34, 144, 204);
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="para1">This is the first paragraph.</p>
+    <p id="para2">This is the second paragraph.</p>
+    <p class="para">This is the third paragraph.</p>
+
+    <br><br>
+    <hr><br><br>
+
+    <h1>DISPLAY EFFECTS</h1><br>
+
+    <!-- display effects -->
+    <h1 id="head">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, rerum?</h1>
+
+    <button type="button" id="hide">Hide</button>
+    <button type="button" id="show">Show</button>
+    <button type="button" id="toggle">Toggle</button>
+    <br><br><br>
+    <hr><br><br>
+
+    <h1>FADE EFFECTS</h1><br>
+
+    <!-- fade effects -->
+    <div id="div1"></div>
+    <button type="button" id="fade-in">FadeIn</button>
+
+    <div id="div2"></div>
+    <button type="button" id="fade-out">FadeOut</button>
+
+    <div id="div3"></div>
+    <button type="button" id="fade-to">FadeTo</button>
+
+    <div id="div4"></div>
+    <button type="button" id="fade-toggle">FadeToggle</button>
+
+    <br><br>
+    <hr><br><br>
+
+    <h1>SLIDE EFFECTS</h1><br>
+
+    <div id="div5"></div>
+    <button type="button" id="slide-down">SlideDown</button>
+    
+    <div id="div6"></div>
+    <button type="button" id="slide-up">SlideUp</button>
+
+    <div id="div7"></div>
+    <button type="button" id="slide-toggle">SlideToggle</button>
+
+    <br><br><hr><br><br>
+
+    <h1>Animate effect</h1><br>
+
+    <div id="div8"></div>
+    <button type="button" id="animate">Animate</button>
+
+    <script>
+        $(document).ready(function () {
+            // put hifen(-) when writing properties with two word names.
+            $('#para1').css('background-color', 'green');
+            $('.para').css({
+                color: 'pink',
+                // use camelCase when writing like this(multiple properties) and not hifen(-)
+                backgroundColor: 'brown',
+                fontSize: '20px'
+            });
+            $('#para2').css({
+                backgroundColor: 'yellow',
+                height: '50px'
+            });
+            $('p').css('margin', '50px');
+
+            // display effects - hide,toggle,show
+
+            $('#para1').click(function () {
+                $(this).hide()
+            });
+            $('.para').click(function () {
+                $('#para2').hide()
+            });
+
+            $('#para2').dblclick(function () {
+                $(this).css({
+                    fontSize: '32px',
+                    backgroundColor: 'blue',
+                    color: 'white',
+                    padding: '10px'
+                });
+            });
+
+            $('#hide').click(function () {
+                $('#head').hide()
+            })
+
+            $('#show').click(function () {
+                $('#head').show()
+            })
+
+            $('#toggle').click(function () {
+                $('#head').toggle()
+            })
+
+            // fade effects - fade-in, fade-out, fade-to, fade-toggle 
+
+            $('#fade-in').click(function () {
+                // $('#div1').fadeIn()
+                // $('#div1').fadeIn('slow')
+                // $('#div1').fadeIn('fast')
+                $('#div1').delay(1000).fadeIn(5000)
+
+                // delay() used above
+            });
+
+            $('#fade-out').click(function () {
+                // $('#div2').fadeOut()
+                // $('#div2').fadeOut('slow')
+                // $('#div2').fadeOut('fast')
+                $('#div2').fadeOut(5000)
+            });
+
+            $('#fade-to').click(function () {
+                // $('#div3').fadeTo('slow',0)
+                // $('#div3').fadeTo('slow',0.5)
+                // $('#div3').fadeTo('fast',0.3)
+                $('#div3').fadeTo(2500, 0.7)
+            });
+
+            $('#fade-toggle').click(function () {
+                // $('#div4').fadeToggle()
+                // $('#div4').fadeToggle('slow')
+                // $('#div4').fadeToggle('fast')
+                $('#div4').fadeToggle(5000)
+            });
+
+            // slide effects - slide up, slide down, slide toggle
+            $('#slide-down').click(function(){
+                // $('#div5').slideDown()
+                // $('#div5').slideDown('slow')
+                // $('#div5').slideDown('fast')
+                $('#div5').slideDown(5000)
+            });
+
+            $('#slide-up').click(function(){
+                // $('#div6').slideUp()
+                // $('#div6').slideUp('slow')
+                // $('#div6').slideUp('fast')
+                $('#div6').slideUp(5000)
+            });
+
+            $('#slide-toggle').click(function(){
+                // $('#div7').slideToggle()
+                // $('#div7').slideToggle('slow')
+                // $('#div7').slideToggle('fast')
+                $('#div7').slideToggle(5000)
+            });
+
+            // animate effect
+            
+            $('#animate').click(function(){
+                $('#div8').animate({
+                    left : '500px'
+                }).delay(1000).animate({
+                    bottom : '100px'
+                }).delay(1000).animate({
+                    top : '50px'
+                }).delay(1000).animate({
+                    left : '-=200px'
+                })
+            });
+
+        });
+    </script>
+</body>
+
+</html>
