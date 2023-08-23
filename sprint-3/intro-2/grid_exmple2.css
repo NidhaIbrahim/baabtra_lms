@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+}
+
+.container{
+    background-color: rgb(62, 55, 91);
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 350px 350px 350px 110px;
+    grid-template-rows: 50px 380px 350px 50px;
+    /* grid-template-columns: 30% 30% 30% 10%;
+    grid-template-rows: 15% 40% 30% 15%; */
+    grid-gap: 20px;
+    grid-template-areas: "heading heading heading heading"
+    "content content content sidebar"
+    "image1 image2 image3 sidebar"
+    "footer footer footer footer";
+}
+
+img{
+    padding: 1px;
+}
+
+.item1{
+    padding-top: 5px;
+    border: 2px solid rgb(185, 149, 127);
+    grid-area: heading;
+    text-align: center;
+    color: rgb(185, 149, 127);
+}
+
+.item2{
+    padding-top: 5px;
+    border: 2px solid rgb(185, 149, 127);
+    grid-area: content;
+    text-align: center;
+    padding: 10px 5px;
+    color: rgb(185, 149, 127);
+}
+
+.item3{
+    padding-top: 5px;
+    border: 2px solid rgb(185, 149, 127);
+    grid-area: sidebar;
+    text-align: center;
+    color: rgb(185, 149, 127);
+}
+
+.item4{
+    border: 2px solid rgb(185, 149, 127);
+    grid-area: image1;
+}
+
+.item5{
+    border: 2px solid rgb(185, 149, 127);
+    grid-area: image2;
+}
+
+.item6{
+    border: 2px solid rgb(185, 149, 127);
+    grid-area: image3;
+}
+
+.item7{
+    padding-top: 5px;
+    border: 2px solid rgb(185, 149, 127);
+    grid-area: footer;
+    text-align: center;
+    color: rgb(185, 149, 127);
+}

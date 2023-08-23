@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+}
+
+.container{
+    background-color: rgb(131, 187, 116);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 150px 150px 150px;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "heading heading heading"
+    "menu section1 section2"
+    "menu footer footer";
+    padding: 5px;
+}
+
+.item1{
+    border: 2px solid rgb(67, 143, 46);
+    grid-area: heading;
+    color: rgb(17, 53, 7);
+    /* text-align: center; */
+    font-weight: 600;
+    /* font-size: 20px; */
+    
+}
+
+.item2{
+    border: 2px solid rgb(67, 143, 46);
+    grid-area: menu;
+    color: rgb(17, 53, 7);
+    /* text-align: center; */
+    font-weight: 600;
+    /* font-size: 20px; */
+}
+
+.item3{
+    border: 2px solid rgb(67, 143, 46);
+    grid-area: section1;
+    color: rgb(17, 53, 7);
+    /* text-align: center; */
+    font-weight: 600;
+    /* font-size: 20px; */
+}
+
+.item4{
+    border: 2px solid rgb(67, 143, 46);
+    grid-area: section2;
+    color: rgb(17, 53, 7);
+    /* text-align: center; */
+    font-weight: 600;
+    /* font-size: 20px; */
+}
+
+.item5{
+    border: 2px solid rgb(67, 143, 46);
+    grid-area: footer;
+    color: rgb(17, 53, 7);
+    /* text-align: center; */
+    font-weight: 600;
+    /* font-size: 20px; */
+}

@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+}
+
+.container{
+    background-color: rgb(241, 235, 229);
+    display: grid;
+    grid-template-columns: 220px 220px 220px 220px;
+    grid-template-rows: 160px 160px 160px;
+    grid-gap: 10px;
+    grid-template-areas: "bluee blueee blueee pinkk"
+    "bluee yelloww pinkkk blueeee"
+    "bluee pinkkkk yellowww blueeee";
+    padding: 10px;
+    justify-content: center;
+}
+
+.item1{
+    background-color: rgb(186, 203, 215);
+    grid-area: bluee;
+}
+
+.item2{
+    background-color: rgb(186, 203, 215);
+    grid-area: blueee;
+}
+
+.item3{
+    background-color: rgb(210, 173, 174);
+    grid-area: pinkk;
+}
+
+.item4{
+    background-color: rgb(209, 204, 172);
+    grid-area: yelloww;
+}
+
+.item5{
+    background-color: rgb(210, 173, 174);
+    grid-area: pinkkk;
+}
+
+.item6{
+    background-color: rgb(186, 203, 215);
+    grid-area: blueeee;
+}
+
+.item7{
+    background-color: rgb(210, 173, 174);
+    grid-area: pinkkkk;
+}
+
+.item8{
+    background-color: rgb(209, 204, 172);
+    grid-area: yellowww;
+}

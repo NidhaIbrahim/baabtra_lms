@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body class="bg-danger">
+    <div class="container card">
+        <div class="row mt-5">
+            <div class="col">
+                <h1 class="fw-bold">REGISTERATION FORM</h1>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col mt-2">
+                <label for="fstname">First name</label>
+                <input type="text" id="fstname" class="form-control mt-3">
+            </div>
+            <div class="col mt-2">
+                <label for="lstname">Last name</label>
+                <input type="text" id="lstname" class="form-control mt-3">
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col mt-2">
+                <label for="email">Email ID</label>
+                <input type="email" id="email" class="form-control mt-3">
+            </div>
+            <div class="col mt-2">
+                <label for="contact">Phone Number</label>
+                <input type="number" id="contact" class="form-control mt-3" pattern="[0-9]{10}">
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col mt-2">
+                <label for="password">Password</label>
+                <input type="password" id="password" class="form-control mt-3">
+            </div>
+            <div class="col mt-2">
+                <label for="cpassword">Confirm Password</label>
+                <input type="password" id="cpassword" class="form-control mt-3">
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+                <label for="gender">Gender</label>
+                <select class="form-control mt-2 w-50" id="gender" >
+                    <option >Male</option>
+                    <option >Female</option>
+                    <option >Other</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <input type="button" value="REGISTER" class="btn btn-danger mt-4 align-center w-25 mb-3 fw-bold">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

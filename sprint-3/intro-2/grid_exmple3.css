@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: 30px 250px 75px 75px 80px;
+    grid-template-areas: "header menu menu menu"
+    "hero hero hero hero"
+    "main main blank image"
+    "main main blank extra"
+    "banner banner banner banner";
+    font-family: monospace;
+    font-size: 15px;
+}
+
+.item1{
+    background-color: rgb(211, 169, 154);
+    grid-area: header;
+    text-align: center; 
+    padding: 5px;
+}
+
+.item2{
+    background-color: darkseagreen;
+    text-align: center; 
+    padding: 5px;
+    grid-area: menu;
+}
+
+.item3{
+    background-color: cornsilk;
+    padding-top: 115px;
+    text-align: center; 
+    grid-area: hero;
+}
+
+.item4{
+    background-color: rgb(207, 241, 242);
+    text-align: center;
+    padding-top: 69px;
+    grid-area: main;
+}
+
+.item5{
+    grid-area: blank;
+}
+
+.item6{
+    background-color: rgb(239, 189, 173);
+    text-align: center; 
+    padding-top: 29px;
+    grid-area: image;
+}
+
+.item7{
+    background-color: rgb(198, 216, 217);
+    text-align: center; 
+    padding-top: 29px;
+    grid-area: extra;
+}
+
+.item8{
+    background-color: rgb(210, 231, 179);
+    text-align: center; 
+    padding-top: 29px;
+    grid-area: banner;
+}

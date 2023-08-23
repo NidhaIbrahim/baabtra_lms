@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+}
+
+.container{
+    background-color: rgb(222, 222, 170);
+    padding: 10px; 
+    width: 800px;
+    display: grid;
+    grid-template-rows: 80px 60px 60px 40px;
+    grid-template-columns: 180px 190px 190px 200px;
+    grid-row-gap: 10px;
+    grid-column-gap: 13px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    color: rgb(44, 39, 39);
+    grid-template-areas: "nav header header header"
+    "nav card1 card2 card3"
+    "nav card1 card2 card4"
+    "nav footer footer footer";
+}
+
+.item1{
+    text-align: center;
+    background-color: crimson;
+    grid-area: nav;
+    padding-top: 125px;
+}
+
+.item2{
+    text-align: center;
+    background-color: crimson;
+    grid-area: header;
+    padding-top: 30px;
+}
+
+.item3{
+    text-align: center;
+    background-color: crimson;
+    grid-area: card1;
+    padding-top: 55px;
+}
+
+.item4{
+    text-align: center;
+    background-color: crimson;
+    grid-area: card2;
+    padding-top: 55px;
+}
+
+.item5{
+    text-align: center;
+    background-color: crimson;
+    grid-area: card3;
+    padding-top: 23px;
+}
+
+.item6{
+    text-align: center;
+    background-color: crimson;
+    padding-top: 23px;
+    grid-area: card4;
+}
+
+.item7{
+    text-align: center;
+    background-color: crimson;
+    grid-area: footer;
+    padding-top: 12px;
+}

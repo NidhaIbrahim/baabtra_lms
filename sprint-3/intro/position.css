@@ -1,0 +1,37 @@
+#parent{
+    height: 800px;
+    width: 400px;
+    background-color: blueviolet;
+    margin-left: 100px;
+    margin-top: 100px;
+    position: relative;
+}
+.child1{
+    height: 200px;
+    width: 200px;
+    background-color: bisque;
+}
+.child2{
+    height: 200px;
+    width: 200px;
+    /* margin-top: 20px; */
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    background-color: rgb(106, 174, 188);
+}
+.child3{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(208, 141, 178);
+}
+.child4{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(163, 211, 195);
+}
+p{
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+}

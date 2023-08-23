@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container w-75">
+        <h1 class="fs-3 my-3 pt-3">SignUp</h1>
+        <form role="form">
+            <div class="row">
+                <div class="form-group ">
+                    <label for="usertype">User Type</label>
+                    <input type="text" placeholder="Customer" id="usertype" class="form-control  my-2">
+                </div>
+                <div class="form-group col-lg-6">
+                    <label for="fname">First Name</label>
+                    <input type="text" placeholder="First Name" id="fname" class="form-control  my-2">
+                </div>
+                <div class="form-group col-lg-6">
+                    <label for="lname">Last Name(optional)</label>
+                    <input type="text" placeholder="Last Name" id="lname" class="form-control  my-2">
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" id="male" value="male" name="gender" class="form-check-input" checked>
+                        <label for="male" class="form-check-label">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" id="female" value="female" name="gender" class="form-check-input">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label for="dateofbirth">Date of Birth</label>
+                    <input type="date" id="dateofbirth" class="form-control  my-2">
+                </div>
+                <div class="form-group ">
+                    <label for="address">Address</label>
+                    <textarea name="address" id="address" cols="30" rows="3" class="form-control  my-2"></textarea>
+                </div>
+                <div class="form-group ">
+                    <label for="country">Country</label>
+                    <select id="country" class="form-control  my-2">
+                        <option value="0">Select your country</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile</label>
+                    <input type="number" placeholder="Enter mobile number" id="mobile" class="form-control  my-2">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Enter your Email " id="email" class="form-control  my-2">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Password" id="password" class="form-control  my-2">
+                </div>
+                <div class="form-group">
+                    <label for="confirm">Confirm Password</label>
+                    <input type="password" placeholder="Confirm Password" id="confirm" class="form-control  my-2">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-warning mt-3 mb-5" type="submit">Sign In</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

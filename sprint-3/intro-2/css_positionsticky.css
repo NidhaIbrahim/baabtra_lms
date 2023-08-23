@@ -1,0 +1,35 @@
+.parent{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(183, 185, 215);
+    overflow: auto;
+    position: relative;
+}
+
+.child1{
+    width: 500px;
+    height: 20px;
+    background-color: rgb(225, 191, 221);
+}
+
+.child2{
+    width: 500px;
+    height: 78px;
+    background-color: rgb(175, 210, 205);
+    position: sticky;
+    top: 0;
+}
+
+.child3{
+    width: 500px;
+    height: 100px;
+    background-color: rgb(202, 197, 168);
+}
+
+.child4{
+    width: 500px;
+    height: 20px;
+    background-color: rgb(225, 191, 191);
+    position: sticky;
+    top: 300px;
+}

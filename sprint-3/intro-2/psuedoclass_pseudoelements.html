@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo class and psuedo elements</title>
+    <style>
+        /* 
+        syntax-:
+        selector:pseudo-class{...}
+        selector::pseudo-element{...}
+        */
+        h1{
+            color: blueviolet;
+            background-color: rgb(155, 142, 167);
+        }
+        
+        h1:hover{
+            background-color: chartreuse;
+            color: rgb(75, 101, 48);
+            font-size: 50px;
+        }
+
+        h4{
+            font-size: 24px;
+        }
+
+        h4::first-letter{
+            color: brown;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lorem, ipsum.</h1>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus amet dolor repellat magnam culpa unde
+        pariatur fuga reiciendis fugit! Nihil obcaecati quod incidunt suscipit tempora nisi provident, corrupti vitae
+        esse, delectus deleniti exercitationem, odio at? Cum id, sequi quibusdam aperiam illum sed quisquam, eum
+        excepturi error dicta, labore odio omnis.
+    </p>
+    <a href="css_positionsticky.html">
+        <img src="/1.jpeg" alt="" width="200px" height="250px">
+    </a>
+    <h4>Lorem ipsum dolor sit.</h4>
+</body>
+
+</html>
