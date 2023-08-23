@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        .demo-class {
+            color: rgb(176, 187, 208);
+            font-size: 32px;
+            background-color: coral;
+        }
+
+        #empty {
+            height: 400px;
+            width: 400px;
+            background-color: cornflowerblue;
+            border: 2px solid rgb(36, 73, 143);
+            color: aliceblue;
+            margin: 20px;
+            padding: 15px;
+        }
+
+        #remove {
+            height: 400px;
+            width: 400px;
+            background-color: coral;
+            border: 2px solid rgb(189, 84, 46);
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="para-1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nostrum hic labore quibusdam consequatur
+        laudantium? Voluptatibus at placeat dolores est, quasi vel! Optio praesentium libero facere quasi earum
+        <b>Lorem, ipsum dolor.</b><i>Lorem ipsum dolor sit amet.</i><u>Lorem, ipsum.</u>
+        provident unde, soluta eaque magnam quas minima quod vero? Id laboriosam consequatur placeat blanditiis sed!
+        Provident, nemo dolores quo deleniti praesentium voluptatum.
+    </p>
+    <button id="showText">SHOW TEXT</button>
+    <button id="showHtml">SHOW HTML</button>
+    <input type="text" id="input1" value="enter text">
+    <button id="showValue">SHOW VALUE</button>
+    <p id="para-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non repudiandae reprehenderit blanditiis commodi sit
+        labore quaerat nobis eaque maxime provident, ex rerum nihil placeat? Non, sequi, pariatur esse ducimus maiores
+        culpa nulla ea error voluptatem reiciendis quisquam aliquid fugiat ex. Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Non modi dicta labore, alias officia aperiam repellat, sapiente nemo expedita dignissimos
+        voluptas recusandae aliquid soluta a voluptatem facere illo error. Vero.
+    </p>
+    <button id="setText">SET TEXT</button>
+    <button id="setHtml">SET HTML</button>
+    <input type="text" id="input2" value="enter">
+    <button id="setValue">SET VALUE</button>
+
+    <br><br>
+
+    <h1>Lorem.</h1>
+    <h4>Lorem, ipsum dolor.</h4>
+    <h6>Lorem, ipsum.</h6>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, facere.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis magnam omnis sequi vitae, consectetur enim
+        voluptatum blanditiis corporis minima adipisci sint aliquam provident magni autem hic possimus ratione deleniti
+        et inventore nemo, deserunt unde. Fugit aliquid debitis alias, quibusdam accusantium nihil doloribus eius
+        ratione expedita temporibus, omnis tempore quia odit?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quo iure, rem quam omnis necessitatibus quaerat
+        provident, natus doloribus adipisci autem quas nostrum accusantium dolorum perspiciatis hic labore fugit
+        corrupti reiciendis ab ipsam fuga quae laborum. Obcaecati perferendis quia corrupti!
+    </p>
+    <button id="addClass">ADD CLASS</button>
+    <br><br><br>
+    <hr><br><br>
+
+    <div id="remove">
+        <h2>remove dolor sit.</h2>
+        <h3>Lorem, ipsum.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione ut quisquam! Magnam aliquam, iusto
+            incidunt iure nemo saepe cum pariatur nesciunt iste, deleniti laudantium delectus minima esse culpa.</p>
+    </div>
+
+    <br><br><br>
+
+    <div id="empty">
+        <h1>empty Lorem, ipsum.</h1>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quidem pariatur dolorum eius sunt a debitis
+            atque!</p>
+    </div>
+
+    <br><br>
+
+    <button id="btnremove">REMOVE</button>
+    <button id="btnempty">EMPTY</button>
+
+    <br><br>
+
+    <p id="para-3">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi accusamus natus perspiciatis exercitationem,
+        porro totam laboriosam distinctio fugit esse quidem, vero autem, pariatur ut aliquid est eveniet vel. Doloremque
+        blanditiis laudantium eius fugiat quo odit nostrum recusandae <span>Lorem, ipsum dolor.</span>hic quos? Temporibus aperiam sapiente
+        exercitationem soluta quas atque quia voluptates at beatae nostrum vero sequi ipsam, suscipit vel! Iste sequi
+        officiis dolorem saepe possimus blanditiis quaerat unde quam aut non! Consectetur hic ratione odit rem nulla!
+        Quibusdam aut velit ullam quas fugiat.
+    </p>
+
+    <button id="adddimension">ADD DIMENSION</button>
+
+    <script>
+        $(document).ready(function () {
+            $('#showText').click(function () {
+                alert($("#para-1").text())
+            });
+            $('#showHtml').click(function () {
+                alert($("#para-1").html())
+            });
+            $('#showValue').click(function () {
+                alert($('#input1').val())
+            });
+
+            $('#setText').click(function () {
+                $('#para-2').text("Lorem ipsum dolor sit amet consectetur adipisicing elit.<h1>Hello</h1>")
+            });
+            $('#setHtml').click(function () {
+                $('#para-2').html("Lorem ipsum dolor sit amet consectetur adipisicing elit.<h1>Hello</h1>")
+            });
+            $('#setValue').click(function () {
+                $('#input2').val("dipisicing elit")
+            });
+
+            $('#addClass').click(function () {
+                $('h1,h3,h6').addClass("demo-class")
+            });
+
+            $('#btnremove').click(function () {
+                $('#remove').remove()
+                $('body').append("<div id='remove'><h2>remove dolor sit.</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione ut quisquam! Magnam aliquam, iustoincidunt iure nemo saepe cum pariatur nesciunt iste, deleniti laudantium delectus minima esse culpa.</p></div>")
+            });
+            $('#btnempty').click(function () {
+                $('#empty').empty()
+            });
+
+            $('span').parent().css({
+                backgroundColor : "cornflowerblue" ,
+                color : "white" ,
+                fontSize : "20px"
+            });
+            $('#para-3').children().css({
+                backgroundColor : "cadetblue" ,
+                color : "white" ,
+                fontSize : "20px"
+            });
+            $('#empty').children().css({
+                backgroundColor : "cadetblue" ,
+                color : "white" ,
+                fontSize : "20px"
+            });
+            $("h3").siblings().css({
+                backgroundColor : 'blueviolet' ,
+                color : 'white' ,
+                fontSize : '20px'
+            });
+
+            $('p').first().css({
+                backgroundColor : 'green' ,
+                color : 'white' ,
+                fontSize : '18px'
+            });
+            $('p').last().css({
+                backgroundColor : 'orange' ,
+                color : 'white' ,
+                fontSize : '18px'
+            });
+            $('p').eq(3).css({
+                backgroundColor : 'yellowgreen' ,
+                color : 'white' ,
+                fontSize : '18px'
+            });
+
+            $('#adddimension').click(function (){
+                var a = "" 
+                a += "width : " + $('#empty').width() + "<br />";
+                a += "height : " + $('#empty').height() + "<br />";
+                a += "innerwidth : " + $('#empty').innerWidth() + "<br />";
+                a += "innerheight : " + $('#empty').innerHeight() + "<br />";
+                $('#empty').html(a)
+            });
+
+            // calculate innerwidth (padding+content width)
+        })
+    </script>
+</body>
+
+</html>
