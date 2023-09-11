@@ -1,0 +1,106 @@
+nidha@DESKTOP-420FESG MINGW64 ~/Desktop/baabtra/database (sprint_5-database_introduction)
+$ git status
+On branch sprint_5-database_introduction
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    OS (C) - Shortcut.lnk
+        deleted:    billing.sql
+        deleted:    db_intro.sql
+        deleted:    staff.sql
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        billing.sql
+        databse_intro.sql
+
+
+nidha@DESKTOP-420FESG MINGW64 ~/Desktop/baabtra/database (sprint_5-database_introduction)
+$ git restore --staged staff.sql billing.sql
+
+nidha@DESKTOP-420FESG MINGW64 ~/Desktop/baabtra/database (sprint_5-database_introduction)
+$ git status
+On branch sprint_5-database_introduction
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    OS (C) - Shortcut.lnk
+        deleted:    db_intro.sql
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    staff.sql
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        databse_intro.sql
+
+
+nidha@DESKTOP-420FESG MINGW64 ~/Desktop/baabtra/database (sprint_5-database_introduction)
+$ git add billing.sql database_intro.sql
+fatal: pathspec 'database_intro.sql' did not match any files
+
+nidha@DESKTOP-420FESG MINGW64 ~/Desktop/baabtra/database (sprint_5-database_introduction)
+$ git ^C
+
+nidha@DESKTOP-420FESG MINGW64 ~/Desktop/baabtra/database (sprint_5-database_introduction)
+$ git add billing.sql databse_intro.sql
+
+nidha@DESKTOP-420FESG MINGW64 ~/Desktop/baabtra/database (sprint_5-database_introduction)
+$ git status
+On branch sprint_5-database_introduction
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    OS (C) - Shortcut.lnk
+        renamed:    db_intro.sql -> databse_intro.sql
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    staff.sql
+
+
+nidha@DESKTOP-420FESG MINGW64 ~/Desktop/baabtra/database (sprint_5-database_introduction)
+$ git branch --all
+  master
+* sprint_5-database_introduction
+  remotes/origin/master
+
+nidha@DESKTOP-420FESG MINGW64 ~/Desktop/baabtra/database (sprint_5-database_introduction)
+$ git status
+On branch sprint_5-database_introduction
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    OS (C) - Shortcut.lnk
+        renamed:    db_intro.sql -> databse_intro.sql
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    staff.sql
+
+
+nidha@DESKTOP-420FESG MINGW64 ~/Desktop/baabtra/database (sprint_5-database_introduction)
+$ git commit -m "first commit"
+[sprint_5-database_introduction ab7cfe8] first commit
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 OS (C) - Shortcut.lnk
+ rename db_intro.sql => databse_intro.sql (100%)
+
+nidha@DESKTOP-420FESG MINGW64 ~/Desktop/baabtra/database (sprint_5-database_introduction)
+$ git push origin sprint_5-database_introduction
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 232 bytes | 232.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'sprint_5-database_introduction' on GitHub by visiting:
+remote:      https://github.com/NidhaIbrahim/baabtra_lms/pull/new/sprint_5-database_introduction
+remote:
+To https://github.com/NidhaIbrahim/baabtra_lms.git
+ * [new branch]      sprint_5-database_introduction -> sprint_5-database_introduction
+
+nidha@DESKTOP-420FESG MINGW64 ~/Desktop/baabtra/database (sprint_5-database_introduction)
+$
